@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    background-color: #fff;
+    max-width: 480px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+
+/* highlights */
+
+.orange-text,
+.green-text {
+    padding: 2px 6px;
+    border-radius: 2px;
+    color: #1a1a1a;
+}
+
+.orange-text {
+    background: #f6a35c;
+}
+
+.green-text {
+    background: #b8e0c8;
+}
+
+u {
+    text-decoration-color: #f6a35c;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
+
+/* header */
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    font-size: 13px;
+}
+
+.site-logo {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.menu-links a:hover {
+    color: #6b6b6b;
+}
+
+
+/* menu icon */
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #1a1a1a;
+}
+
+
+/* hero */
+
+.main-section {
+    padding: 30px 28px 40px;
+    text-align: center;
+}
+
+.main-section h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+}
+
+.main-description {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    padding: 0 8px;
+}
+
+
+/* avatars */
+
+.team-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.team-member {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #eee;
+    flex-shrink: 0;
+}
+
+.team-member:nth-child(2) {
+    margin-top: -14px;
+}
+
+.team-member:nth-child(4) {
+    margin-top: 16px;
+}
+
+.team-member:nth-child(6) {
+    margin-top: -10px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* sections */
+
+.section-container {
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: left;
+}
+
+.section-two {
+    flex-direction: column;
+}
+
+.section-container h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.section-container p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.text-side,
+.image-side {
+    width: 100%;
+}
+
+.image-side {
+    display: flex;
+    justify-content: center;
+}
+
+.round-image {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.round-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* services */
+
+.services {
+    padding: 40px 28px 20px;
+}
+
+.services h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0;
+    border-top: 1px solid #e5e5e5;
+    font-size: 11px;
+}
+
+.service-row:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.service-title {
+    color: #999;
+    line-height: 1.4;
+}
+
+.service-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.arrow-icon {
+    font-size: 16px;
+    color: #1a1a1a;
+    justify-self: end;
+}
+
+
+/* reviews */
+
+.reviews {
+    padding: 40px 28px;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.review-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.review-row-bottom {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-member.small {
+    width: 34px;
+    height: 34px;
+}
+
+.team-member.medium {
+    width: 46px;
+    height: 46px;
+}
+
+.review-box {
+    width: 210px;
+    padding: 18px;
+    border-radius: 16px;
+    background: #b8e0c8;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    flex-shrink: 0;
+}
+
+
+/* footer */
+
+.page-footer {
+    background: #c9ead6;
+    padding: 50px 28px 24px;
+    text-align: center;
+}
+
+.page-footer h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.page-footer>p {
+    font-size: 12px;
+    color: #3a3a3a;
+    margin-bottom: 22px;
+}
+
+.subscribe-button {
+    padding: 12px 28px;
+    border-radius: 24px;
+    border: none;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer-sections {
+    margin-top: 50px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer-box h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.footer-box a {
+    display: block;
+    font-size: 11px;
+    color: #3a3a3a;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-end {
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer-end p {
+    font-size: 10px;
+    color: #555;
+}
