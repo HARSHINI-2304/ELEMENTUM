@@ -113,7 +113,8 @@ u {
 
 /* images */
 
-.team-row {
+
+/* .team-row {
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -139,6 +140,44 @@ u {
 }
 
 .team-member:nth-child(6) {
+    margin-top: -10px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.team-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.team-member {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #eee;
+    flex-shrink: 0;
+}
+
+
+/* simple movement classes */
+
+.move-up {
+    margin-top: -14px;
+}
+
+.move-down {
+    margin-top: 16px;
+}
+
+.move-up-small {
     margin-top: -10px;
 }
 
