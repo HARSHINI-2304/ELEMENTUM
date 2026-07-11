@@ -15,16 +15,21 @@ h1,
 h2,
 h3,
 h4,
-.site-logo {
-    font-family: 'Gerbil', sans-serif;
+.site-logo,
+.service-text {
+    font-family: 'Fredoka', sans-serif;
 }
 
 a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+}
 
-/* Navbar  */
+
+/* Navbar */
 
 .header-bar {
     display: flex;
@@ -34,13 +39,16 @@ a {
 }
 
 .site-logo {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .menu-links {
     display: flex;
-    gap: 48px;
+    gap: 42px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .menu-links a {
@@ -65,17 +73,17 @@ a {
 }
 
 
-/* Hero Section  */
+/* Hero Section */
 
 .main-section {
     text-align: center;
-    padding: 40px 20px 0;
+    padding: 30px 20px 0;
 }
 
 .main-section h1 {
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 1.3;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.28;
     max-width: 950px;
     margin: 0 auto;
 }
@@ -86,56 +94,65 @@ a {
     display: inline-block;
 }
 
+.main-section h1 u::before,
 .main-section h1 u::after {
     content: "";
     position: absolute;
-    left: -3%;
-    right: -3%;
-    bottom: -10px;
-    height: 6px;
+    left: -4%;
+    right: -4%;
+    height: 4px;
     background: #f5a623;
-    border-radius: 4px;
+    border-radius: 6px;
+}
+
+.main-section h1 u::before {
+    bottom: -8px;
     transform: rotate(-2deg);
 }
 
-.orange-text {
+.main-section h1 u::after {
+    bottom: -18px;
+    transform: rotate(3deg);
+}
+
+.pink-text {
     background: #f4b9d8;
     border-radius: 40px;
-    padding: 4px 18px;
+    padding: 2px 20px;
     display: inline-block;
 }
 
 .green-text {
     background: #cfe8cf;
     border-radius: 40px;
-    padding: 4px 18px;
+    padding: 2px 20px;
     display: inline-block;
 }
 
 .main-description {
-    max-width: 520px;
-    margin: 28px auto 0;
+    max-width: 480px;
+    margin: 26px auto 0;
     font-size: 15px;
     color: #333333;
     line-height: 1.6;
 }
 
 
-/* Team row  */
+/* Team row */
 
 .team-photos {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    max-width: 1000px;
-    margin: 60px auto 0;
-    padding-bottom: 20px;
+    max-width: 1050px;
+    margin: 55px auto 0;
+    padding-bottom: 10px;
 }
 
 .team-photo {
-    width: 116px;
-    height: 116px;
-    margin-left: 32px;
+    width: 128px;
+    height: 128px;
+    margin-left: 26px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid #ffffff;
@@ -151,35 +168,35 @@ a {
     display: block;
 }
 
-.team-photo.start {
-    margin-left: 0;
+.team-photo.overlap {
+    margin-left: -24px;
 }
 
-.team-photo.overlap {
-    margin-left: -22px;
+.team-photo.group-gap {
+    margin-left: 46px;
 }
 
 .team-photo.small {
-    width: 92px;
-    height: 92px;
+    width: 104px;
+    height: 104px;
 }
 
 
-/* Section 1 & 2  */
+/* Section 1 & 2 */
 
 .section-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1100px;
-    margin: 100px auto;
-    padding: 0 20px;
+    margin: 110px auto;
+    padding: 0 60px;
     gap: 60px;
 }
 
 .section-container .text-side {
     flex: 1;
-    max-width: 460px;
+    max-width: 440px;
 }
 
 .section-container h2 {
@@ -214,7 +231,7 @@ a {
     margin-bottom: 14px;
 }
 
-.section-container .text-side p:last-of-type {
+.read-more {
     display: inline-flex;
     align-items: center;
     gap: 12px;
@@ -225,9 +242,16 @@ a {
     margin-bottom: 0;
 }
 
+.read-line {
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background: #111111;
+}
+
 .section-container .image-side {
     flex: 1;
-    max-width: 420px;
+    max-width: 400px;
     display: flex;
     justify-content: center;
 }
@@ -247,17 +271,17 @@ a {
 }
 
 
-/* Service section  */
+/* Service section */
 
 .services {
     max-width: 1100px;
-    margin: 120px auto 0;
-    padding: 0 20px;
+    margin: 110px auto 0;
+    padding: 0 60px;
 }
 
 .services h2 {
     font-size: 44px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.25;
     margin-bottom: 50px;
 }
@@ -282,11 +306,11 @@ a {
 
 .service-row {
     display: grid;
-    grid-template-columns: 260px 1fr 40px;
+    grid-template-columns: 220px 1fr 40px;
     align-items: center;
     gap: 30px;
     border-top: 1px solid #e5e5e5;
-    padding: 30px 0;
+    padding: 34px 0;
 }
 
 .service-row:last-child {
@@ -300,7 +324,6 @@ a {
 }
 
 .service-text {
-    font-family: 'Gerbil', sans-serif;
     font-size: 28px;
     font-weight: 500;
 }
@@ -318,8 +341,7 @@ a {
     position: relative;
     max-width: 1100px;
     margin: 120px auto;
-    padding: 0 20px 60px;
-    min-height: 480px;
+    padding: 0 20px 40px;
     text-align: center;
 }
 
@@ -350,17 +372,19 @@ a {
     transform: rotate(-2deg);
 }
 
-.review-row,
-.review-row-bottom {
-    position: static;
+.review-wrap {
+    position: relative;
+    max-width: 1000px;
+    min-height: 460px;
+    margin: 0 auto;
 }
 
 .team-member {
+    position: absolute;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid #ffffff;
     background: #e0e0e0;
-    flex-shrink: 0;
 }
 
 .team-member img {
@@ -370,132 +394,95 @@ a {
     display: block;
 }
 
-.reviews .team-member.small {
-    width: 60px;
-    height: 60px;
-}
-
-.reviews .team-member.medium {
-    width: 100px;
-    height: 100px;
-}
-
-.review-row .team-member,
-.review-row-bottom .team-member {
-    position: absolute;
-    z-index: 1;
-}
-
 .avatar-top-left {
-    width: 80px;
-    height: 80px;
-    left: 90px;
-    top: 20px;
+    width: 74px;
+    height: 74px;
+    left: 130px;
+    top: 10px;
 }
 
 .avatar-left-mid {
-    width: 50px;
-    height: 50px;
-    left: 10px;
-    top: 155px;
+    width: 48px;
+    height: 48px;
+    left: 20px;
+    top: 130px;
 }
 
 .avatar-left-large {
-    width: 110px;
-    height: 110px;
-    left: 90px;
-    top: 195px;
+    width: 108px;
+    height: 108px;
+    left: 100px;
+    top: 190px;
 }
 
 .avatar-bottom-left {
-    width: 60px;
-    height: 60px;
-    left: 0;
-    top: 320px;
+    width: 58px;
+    height: 58px;
+    left: 10px;
+    top: 300px;
 }
 
 .avatar-right-upper {
-    width: 55px;
-    height: 55px;
-    right: 195px;
-    top: 90px;
+    width: 52px;
+    height: 52px;
+    right: 205px;
+    top: 65px;
 }
 
 .avatar-right-mid {
-    width: 75px;
-    height: 75px;
+    width: 88px;
+    height: 88px;
     right: 90px;
-    top: 55px;
+    top: 30px;
 }
 
 .avatar-bottom-right {
-    width: 60px;
-    height: 60px;
-    right: 175px;
-    top: 175px;
+    width: 56px;
+    height: 56px;
+    right: 195px;
+    top: 155px;
 }
 
 .avatar-right-large {
-    width: 130px;
-    height: 130px;
+    width: 128px;
+    height: 128px;
     right: 30px;
-    top: 275px;
+    top: 250px;
 }
 
 .review-box {
     position: relative;
     z-index: 2;
     background: #eef4ee;
-    border-radius: 28px;
-    max-width: 560px;
-    margin: 0 auto;
-    padding: 56px 56px 64px;
+    border-radius: 24px;
+    max-width: 500px;
+    margin: 60px auto 0;
+    padding: 40px 44px 50px;
     font-size: 15px;
-    line-height: 2;
+    line-height: 1.8;
     color: #333333;
-    text-align: center;
-}
-
-.quote-line {
-    display: block;
-}
-
-.line-1 {
-    color: #6b46c1;
-}
-
-.line-2 {
-    color: #c2410c;
-}
-
-.line-3 {
-    color: #0f766e;
-}
-
-.line-4 {
-    color: #6b7280;
 }
 
 .review-box::before {
     content: "\201C";
     position: absolute;
-    left: 26px;
-    top: 8px;
-    font-size: 60px;
+    left: 28px;
+    top: 14px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 0;
-    color: #a9c0b3;
+    color: #b9c9b9;
 }
 
 .review-box::after {
     content: "\201D";
     position: absolute;
-    right: 26px;
-    bottom: 14px;
-    font-size: 60px;
+    right: 28px;
+    bottom: 20px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 0;
-    color: #a9c0b3;
+    color: #b9c9b9;
 }
 
 
@@ -509,7 +496,7 @@ a {
 }
 
 .page-footer h2 {
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -525,6 +512,7 @@ a {
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
+    font-family: 'Satoshi', sans-serif;
     padding: 16px 32px;
     border-radius: 30px;
     border: none;
